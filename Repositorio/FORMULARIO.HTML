@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Formulario de Inscripción</title>
+  <style>
+    body {
+      background-color: gray;
+      color: white;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 450px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: black;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="date"],
+    select {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+    }
+
+    input[type="submit"] {
+      background-color: white;
+      color: darkgreen;
+      padding: 10px 20px;
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Formulario de Inscripción</h1>
+    <form>
+      <div class="form-group">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+      </div>
+      <div class="form-group">
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="telefono">Teléfono:</label>
+        <input type="text" id="telefono" name="telefono" required>
+      </div>
+      <div class="form-group">
+        <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+      </div>
+      <div class="form-group">
+        <label for="tutor">Nombre del Tutor:</label>
+        <input type="text" id="tutor" name="tutor" required>
+      </div>
+      <div class="form-group">
+        <label for="carrera">Carrera a Cursar:</label>
+        <select id="carrera" name="carrera" required>
+          <option value="">Seleccione</option>
+          <option value="Ingeniería Informática">Ingeniería Informática</option>
+          <option value="Administración de Empresas">Administración de Empresas</option>
+          <option value="Diseño Gráfico">Diseño Gráfico</option>
+          <option value="Psicología">Psicología</option>
+          <!-- Agrega más opciones según sea necesario -->
+        </select>
+      </div>
+      <input type="submit" value="Enviar">
+    </form>
+  </div>
+</body>
+</html>
